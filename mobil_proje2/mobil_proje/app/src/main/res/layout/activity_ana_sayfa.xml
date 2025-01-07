@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".AnaSayfa">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:background="#2D3963"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme">
+
+            <ImageView
+                android:id="@+id/toolbar_logo"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="start"
+                android:contentDescription="Logo"
+                android:src="@drawable/logo_round" />
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="cursive"
+                android:text="GıdaDenge"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/fl_urun_ekle"
+        android:layout_width="328dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="38dp"
+        app:layout_constraintBottom_toTopOf="@+id/fl_urunlistele"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout2">
+
+        <ImageButton
+            android:id="@+id/btnUrunEkle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/menu"
+            android:contentDescription="Ürün Ekle"
+            android:scaleType="centerCrop"
+            android:src="@drawable/menu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Ürün Ekle"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/fl_urunlistele"
+        android:layout_width="328dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="38dp"
+        app:layout_constraintBottom_toTopOf="@+id/fl_harita"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fl_urun_ekle">
+
+        <ImageButton
+            android:id="@+id/btnUrunAl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/menu_3"
+            android:contentDescription="Ürün Al"
+            android:scaleType="centerCrop"
+            android:src="@drawable/menu_3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Ürün Al"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/fl_harita"
+        android:layout_width="328dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="38dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCikis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fl_urunlistele">
+
+        <ImageButton
+            android:id="@+id/btnHarita"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/menu_4"
+            android:contentDescription="Harita"
+            android:scaleType="centerCrop"
+            android:src="@drawable/menu_4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Harita"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/btnCikis"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="28dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Çıkış Yap"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

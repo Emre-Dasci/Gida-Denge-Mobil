@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GıdaDenge</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_harita">Harita</string>
+    <string name="my_map_api_key">AIzaSyCP_meqckxDL8hbVPToa7te1it79CYZcYY</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
